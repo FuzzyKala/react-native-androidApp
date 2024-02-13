@@ -1,11 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  FlatList,
+  ScrollView,
+  TouchableOpacity,
+  Image,
+  Button,
+  Pressable,
+  ImageBackground,
+  StyleSheet,
+  Text,
+  View,
+  Alert,
+  TextInput,
+  SafeAreaView,
+} from "react-native";
+// import Receipt from "./components/stackScreen/screens/receipt/receiptPage";
+// import Login from "./components/stackScreen/screens/login/loginPage";
+import E5 from "./components/stackScreen/E5";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      {/* <Receipt /> */}
+      {/* <Login /> */}
+      <E5 />
     </View>
   );
 }
@@ -13,8 +30,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
